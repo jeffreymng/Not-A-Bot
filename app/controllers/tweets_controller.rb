@@ -15,5 +15,7 @@ class TweetsController < ApplicationController
       new_post = post.concat(" ##{image.clarifai_tags.sample}")
       @user.twitter.update_with_media(new_post, open(image.image_url))
     end
+    @tweets = @user.twitter.user_timeline("#{session[:user]}", count: 10).sample.id
+    redirect_to users_show
   end
 end

@@ -126,10 +126,10 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    materialize-sass (0.97.7)
-      sass (~> 3.3)
     marky_markov (0.3.5)
       msgpack
+    materialize-sass (0.97.7)
+      sass (~> 3.3)
     memoist (0.14.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
@@ -269,11 +269,8 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
-<<<<<<< HEAD
-  materialize-sass
-=======
   marky_markov
->>>>>>> 97ccc590162abdd201e9bc9dd32d9549fe0a1e37
+  materialize-sass
   omniauth
   omniauth-oauth
   omniauth-twitter
