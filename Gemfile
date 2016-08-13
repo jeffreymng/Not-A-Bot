@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'marky_markov'
 
 
+gem 'materialize-sass'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

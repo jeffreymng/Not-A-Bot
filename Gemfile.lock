@@ -128,6 +128,8 @@ GEM
       mime-types (>= 1.16, < 4)
     marky_markov (0.3.5)
       msgpack
+    materialize-sass (0.97.7)
+      sass (~> 3.3)
     memoist (0.14.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
@@ -268,6 +270,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   marky_markov
+  materialize-sass
   omniauth
   omniauth-oauth
   omniauth-twitter
