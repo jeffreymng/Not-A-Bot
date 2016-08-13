@@ -16,6 +16,6 @@ class TweetsController < ApplicationController
       @user.twitter.update_with_media(new_post, open(image.image_url))
     end
     @tweets = @user.twitter.user_timeline("#{session[:user]}", count: 10).sample.id
-    redirect_to users_show
+    redirect_to users_path
   end
 end

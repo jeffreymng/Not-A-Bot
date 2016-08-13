@@ -1,0 +1,12 @@
+<h1>Sneaky Sneaky</h1>
+<p>all your bots tweets</p>
+
+
+<% @tweets.each do |tweet| %>
+	<blockquote class="twitter-tweet"
+  data-link-color="#55acee" lang="es">
+<p lang="en"><%= tweet.text %></p>
+—  Human Jeff (<%= @current_user.name %>)
+</a>
+</blockquote>
+<%end%>
