@@ -1,0 +1,7 @@
+<h1>Sneaky Sneaky</h1>
+<p>all your bots tweets</p>
+
+
+<% @tweets.each do |tweet| %>
+	<%= render_partial: "/tweet", locals: { tweet: tweet } %>
+<%end%>
