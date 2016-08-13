@@ -5,7 +5,7 @@ module MarkovHelper
     markov = MarkyMarkov::TemporaryDictionary.new
     markov.parse_string text
     x = markov.generate_n_sentences 2
-    x = markov.generate_n_words 20
+    x = markov.generate_n_words 17
     markov.clear!
 
     return x
