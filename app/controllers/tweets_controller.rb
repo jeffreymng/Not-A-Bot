@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
     current_user
     reply_prob = [0, 0, 0, 1]
     if reply_prob.sample == 1
-      recent = @current_user.twitter.user_timeline("#{session[:user]}", count: 5).sample.id
+      recent = @current_user.twitter.user_timeline("JustJeffing", count: 5).sample.id
       replies = ["Hey you sound a lot like a robot to me.", "I think a bot took over my twitter account, that's not me!", "The real me would never say stuff like that.", "Why can't I log on to my twitter? Oh. That's why."]
       @current_user.twitter.update("@JustJeffing #{replies.sample}", in_reply_to_status_id: recent)
     else
