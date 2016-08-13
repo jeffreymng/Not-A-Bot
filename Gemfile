@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-
-
+gem 'clarifai_ruby'
+gem 'google-api-client'
 gem 'twitter'
 gem 'httparty'
 gem 'omniauth'
