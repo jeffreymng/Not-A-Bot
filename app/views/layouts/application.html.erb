@@ -7,9 +7,14 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
+
   </head>
 
   <body>
+  <div class='row'>
+  <div class="col s1 offset-s4">
     <%= yield %>
+  </div>
+  </div>
   </body>
 </html>

@@ -35,3 +35,166 @@ blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
+
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-color-dark:   #455A64;
+$primary-color:        #607D8B;
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #ff8f00;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #B6B6B6;
+
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+.inactive {
+  display: none;
+}
+
+.text-scroll-container {
+  height:250px;
+  width:100%;
+  border:1px solid #ccc;
+  font:16px/26px Georgia, Garamond, Serif;
+  overflow:auto;
+}
+
+.url-form{
+  margin: 40px auto 20px auto;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#player{
+  margin:50px 0;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: $primary-color;
+  height: 80px;
+  width:100%;
+}
+
+audio::-webkit-media-controls-timeline{
+  background-color: $primary-color-light;
+}
+
+.article .btn-floating{
+  margin:5px;
+  background-color: $primary-color;
+}
+
+#url-error {
+  color: red;
+}
+
+.read-button{
+  color:$primary-color;
+}
+
+.btn-floating:hover{
+  background-color: $accent-color;
+}
+
+.article{
+  margin-top:10px;
+  padding: 0 0 60px 0;
+  border-bottom:1px solid $primary-color;
+}
+
+#tabs {
+  margin-top:10%;
+  border-bottom:3px solid $primary-color;
+
+
+  td{
+    padding: 0px 5px;
+  }
+}
+
+.open-tab {
+  border:3px solid $primary-color;
+  border-bottom: 3px solid white;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.tab {
+  width: 100px;
+}
+
+td h4{
+  font-size:1.5rem;
+}
+
+.your-articles{
+  padding-bottom: 100px;
+  width: 80%;
+  margin:auto;
+
+  .btn-floating{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+  }
+}
+
+
+
+@media #{$small-and-down}{
+  #player{
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:2;
+    padding:0;
+    margin-bottom:30px;
+  }
+
+  audio::-webkit-media-controls-panel {
+    height: 60px;
+    width:100%;
+  }
+
+  audio::-webkit-media-controls-play-button{
+    height: 40px;
+    width: 40px;
+  }
+
+  audio::-webkit-media-controls-mute-button{
+    height: 50px;
+    width: 50px;
+  }
+
+  audio::-webkit-media-controls-timeline{
+    height:8px;
+  }
+
+  audio::-webkit-media-controls-time-remaining-display{
+    font-size: 1em;
+  }
+
+  audio::-webkit-media-controls-volume-slider-container{
+    width: 20px;
+  }
+
+  audio::-webkit-media-controls-volume-slider{
+    height: 10px;
+    width: 100%;
+  }
+}
