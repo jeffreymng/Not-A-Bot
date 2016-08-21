@@ -33,5 +33,8 @@ RoR, Materialize CSS Framework, Twitter API/oAuth, Clarifai Image recognition, a
 	- Puma for basic multithreading
 	- minimal use of DB as most of the data aquasition is done through API calls.
 
-for more info on our implemtation of the Twitter api/oAuth:
+more info on our implemtation of the Twitter api/oAuth:
 https://gorails.com/episodes/omniauth-twitter-sign-in
+
+dotenv notation/github:
+https://github.com/bkeepers/dotenv
